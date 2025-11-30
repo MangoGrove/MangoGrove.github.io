@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+    
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Chinese Book Reviews — Mango</title>
+    <style>
+        :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.4;color:#111}
+        body{max-width:980px;margin:28px auto;padding:0 18px}
+        header{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+        a.logo{font-weight:700;text-decoration:none;color:inherit}
+        nav{margin-left:auto}
+        nav a{margin-left:12px;color:#0366d6;text-decoration:none}
+        .intro{color:#444;margin-bottom:18px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+        .card{border:1px solid #e6e6e6;padding:14px;border-radius:8px;background:#fff;min-height:180px;display:flex;flex-direction:column;gap:8px}
+        .cover{width:100%;height:160px;background:#f6f6f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px}
+        h2{font-size:18px;margin:0}
+        .meta{font-size:13px;color:#666}
+        .summary{font-size:15px;color:#222}
+        .full-review{font-size:14px;color:#333;border-top:1px dashed #eee;padding-top:8px;margin-top:8px;flex:1}
+        .tags{font-size:13px;color:#6a737d}
+        .external{font-size:13px;color:#0366d6;text-decoration:none}
+        footer{margin-top:28px;color:#666;font-size:13px}
+        /* visual hints for editable blanks */
+        [contenteditable="true"]{outline:2px dashed transparent;padding:2px}
+        [contenteditable="true"]:focus{outline-color:#cfe8ff;background:#fff}
+        @media (max-width:520px){.grid{grid-template-columns:1fr}}
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <a class="logo" href="index.html">Mango — Book Reviews</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mango_MayaProjects.html">Mango Maya Projects</a>
+            <a href="chinese.html" aria-current="page">Chinese Reviews</a>
+        </nav>
+    </header>
+
+    <p class="intro">
+        模板页面：每个书评卡片为可编辑空白。点击文本区域开始填写中文书名、作者、评分与书评。
+    </p>
+
+    <section class="grid" aria-label="Book reviews">
+        <!-- Duplicate or copy this .card block for each review you want to add -->
+        <article class="card">
+            <div class="cover" contenteditable="true">封面图片 URL 或拖放图片地址</div>
+            <h2 contenteditable="true">书名（在此填写中文书名）</h2>
+            <p class="meta">
+                <span class="author" contenteditable="true">作者：________</span> ·
+                <time contenteditable="true">日期：____-__-__</time> ·
+                <span class="rating" contenteditable="true">评分：__/10</span>
+            </p>
+            <p class="summary" contenteditable="true">短评摘要：在此填写一两句概述书籍的关键点或印象。</p>
+            <div class="full-review" contenteditable="true">
+                详细书评：在此撰写完整书评。可分段描述情节、主题、写作风格、推荐对象等。
+            </div>
+            <p class="tags" contenteditable="true">标签：类型、翻译、时代、主题 等（用逗号分隔）</p>
+            <a class="external" href="#" contenteditable="true">外部链接（例如购买页面或作者简介）</a>
+        </article>
+
+        <article class="card">
+            <div class="cover" contenteditable="true">封面图片 URL 或拖放图片地址</div>
+            <h2 contenteditable="true">书名（在此填写中文书名）</h2>
+            <p class="meta">
+                <span class="author" contenteditable="true">作者：________</span> ·
+                <time contenteditable="true">日期：____-__-__</time> ·
+                <span class="rating" contenteditable="true">评分：__/10</span>
+            </p>
+            <p class="summary" contenteditable="true">短评摘要：在此填写一两句概述书籍的关键点或印象。</p>
+            <div class="full-review" contenteditable="true">
+                详细书评：在此撰写完整书评。可分段描述情节、主题、写作风格、推荐对象等。
+            </div>
+            <p class="tags" contenteditable="true">标签：类型、翻译、时代、主题 等（用逗号分隔）</p>
+            <a class="external" href="#" contenteditable="true">外部链接（例如购买页面或作者简介）</a>
+        </article>
+
+        <article class="card">
+            <div class="cover" contenteditable="true">封面图片 URL 或拖放图片地址</div>
+            <h2 contenteditable="true">书名（在此填写中文书名）</h2>
+            <p class="meta">
+                <span class="author" contenteditable="true">作者：________</span> ·
+                <time contenteditable="true">日期：____-__-__</time> ·
+                <span class="rating" contenteditable="true">评分：__/10</span>
+            </p>
+            <p class="summary" contenteditable="true">短评摘要：在此填写一两句概述书籍的关键点或印象。</p>
+            <div class="full-review" contenteditable="true">
+                详细书评：在此撰写完整书评。可分段描述情节、主题、写作风格、推荐对象等。
+            </div>
+            <p class="tags" contenteditable="true">标签：类型、翻译、时代、主题 等（用逗号分隔）</p>
+            <a class="external" href="#" contenteditable="true">外部链接（例如购买页面或作者简介）</a>
+        </article>
+
+        <!-- Add more .card blocks as needed -->
+    </section>
+
+    <footer>
+        <small>提示：保存文件后在本地或 GitHub Pages 上查看。复制卡片块以添加更多书评。</small>
+    </footer>
+</body>
+</html>
