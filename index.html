@@ -10,7 +10,8 @@
 
 <body>
 
-    <ul class="nav justify-content-left ">
+<div class="header-container d-flex justify-content-between align-items-center w-100">
+    <ul class="nav">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:#6d4e2e !important;">Dropdown</a>
             <div class="dropdown-menu">
@@ -22,6 +23,12 @@
             </div>
         </li>
     </ul>
+
+    <div id="timemine" class="text-right" style="color:#6d4e2e !important; visibility:hidden; font-size:0.9rem;">
+        Time@My Location: <span id="localTime" style="color:#6d4e2e !important;"></span>
+    </div>
+</div>
+<script src="js_files/current_time.js"></script>
     
 
     <div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
